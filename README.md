@@ -34,15 +34,15 @@ winget install ImageMagick
 ### macOS / Linux
 
 ```bash
-chmod +x nomeArquivo.sh
-./nomeArquivo.sh
+chmod +x cypressInstallMac.sh
+./cypressInstallMac.sh
 ```
 
 ### Windows (via Git Bash ou WSL)
 
 ```bash
-chmod +x nomeArquivo.sh
-./nomeArquivo.sh
+chmod +x cypressInstallWindows.sh
+./cypressInstallWindows.sh NomeDaPasta Autor VersaoDoCypress(opicional)
 ```
 ---
 
