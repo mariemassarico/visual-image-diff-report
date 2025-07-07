@@ -55,3 +55,27 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 ## ✨ Contribuições
 
 Sinta-se à vontade para abrir issues ou PRs com melhorias, correções ou sugestões!
+
+
+---
+
+## ▶️ Como Rodar a validação das telas?
+
+Após instalação, instale as dependências
+```bash
+npm install
+```
+
+e escrita dos testes no cypress, na tela que você deseja validar vai colocar o comando:
+
+```bash
+cy.compareSnapshot(nomeDaTela)
+```
+
+após rodar os testes, seja pelo modo interativo ou pelo modo headless, você vai gerar os relatórios
+```bash
+npx cypress-image-diff-html-report generate
+cypress-image-diff-html-report start --autoOpen
+```
+
+Isso levara você a uma tela de validação das telas em questão
